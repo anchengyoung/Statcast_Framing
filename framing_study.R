@@ -60,7 +60,7 @@ ggplot(sc_yty, aes(x = runs_year1, y = runs_year2)) +
   geom_point() + geom_smooth(method = lm) +
   xlim(-23, 32) + ylim(-23, 32) +
   xlab("Year 1 Framing Runs") + ylab("Year 2 Framing Runs") +
-  ggtitle("Statcast Framing Runs Year-to-Year Correlaiton")
+  ggtitle("Statcast Framing Runs Year-to-Year Correlation")
 
 # Calculate correlation coefficient
 sc_yty %>% summarize(correlation = cor(runs_year1, runs_year2))
@@ -105,7 +105,7 @@ ggplot(bp_yty, aes(x = runs_year1, y = runs_year2)) +
   geom_point() + geom_smooth(method = lm) +
   xlim(-23, 32) + ylim(-23, 32) +
   xlab("Year 1 Framing Runs") + ylab("Year 2 Framing Runs") +
-  ggtitle("Baseball Prospectus Framing Runs Year-to-Year Correlaiton")
+  ggtitle("Baseball Prospectus Framing Runs Year-to-Year Correlation")
 
 # Calculate correlation coefficient
 bp_yty %>% summarize(correlation = cor(runs_year1, runs_year2))
@@ -154,7 +154,7 @@ ggplot(fg_yty, aes(x = runs_year1, y = runs_year2)) +
   geom_point() + geom_smooth(method = lm) +
   xlim(-23, 32) + ylim(-23, 32) +
   xlab("Year 1 Framing Runs") + ylab("Year 2 Framing Runs") +
-  ggtitle("FanGraphs Framing Runs Year-to-Year Correlaiton")
+  ggtitle("FanGraphs Framing Runs Year-to-Year Correlation")
 
 # Calculate correlation coefficient
 fg_yty %>% summarize(correlation = cor(runs_year1, runs_year2))
